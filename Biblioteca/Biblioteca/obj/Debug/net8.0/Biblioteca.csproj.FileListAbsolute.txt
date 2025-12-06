@@ -1,0 +1,15 @@
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\bin\Debug\net8.0\Biblioteca.exe
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\bin\Debug\net8.0\Biblioteca.deps.json
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\bin\Debug\net8.0\Biblioteca.runtimeconfig.json
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\bin\Debug\net8.0\Biblioteca.dll
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\bin\Debug\net8.0\Biblioteca.pdb
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.AssemblyInfo.cs
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.sourcelink.json
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.dll
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\refint\Biblioteca.dll
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.pdb
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\Biblioteca.genruntimeconfig.cache
+C:\Users\taina\Music\Trabalho_Biblioteca\Biblioteca\Biblioteca\obj\Debug\net8.0\ref\Biblioteca.dll
