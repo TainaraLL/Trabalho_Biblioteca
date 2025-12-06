@@ -10,7 +10,9 @@
         public string Descricao { get; set; }
         public string Isbn { get; set; }
 
-        // FK CATEGORIA
-        // FK EDITORA 
+        public Categoria categoria;
+
+        public Editora editora;
+
     }
 }

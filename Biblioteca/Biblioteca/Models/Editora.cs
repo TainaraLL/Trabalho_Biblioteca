@@ -8,6 +8,6 @@
         public string Cnpj { get; set; }
         public string Email { get; set; }
 
-        // FK ENDEREÇO
+        public Endereco endereco;
     }
 }
