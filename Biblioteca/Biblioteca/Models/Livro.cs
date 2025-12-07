@@ -14,5 +14,8 @@
 
         public Editora editora;
 
+        public int Id_Categoria;
+
+        public int Id_Editora;
     }
 }
