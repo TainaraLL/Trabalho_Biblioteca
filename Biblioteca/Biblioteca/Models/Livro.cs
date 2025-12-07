@@ -14,8 +14,8 @@
 
         public Editora editora;
 
-        public int Id_Categoria;
+        public int Id_Categoria { get; set; }
 
-        public int Id_Editora;
+        public int Id_Editora { get; set; }
     }
 }

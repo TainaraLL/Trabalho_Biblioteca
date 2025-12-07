@@ -22,7 +22,7 @@ namespace Biblioteca.DAO
                     cmd.Parameters.AddWithValue("@cpf", usuario.Cpf);
                     cmd.Parameters.AddWithValue("@email", usuario.Email);
                     cmd.Parameters.AddWithValue("@nome", usuario.Nome);
-                    cmd.Parameters.AddWithValue("@id_endereco_fk", usuario.Id_Endereco);
+                    cmd.Parameters.AddWithValue("@id_endereco_fk", usuario.Id_Endereco_Fk);
 
                     cmd.ExecuteNonQuery();
                 }
@@ -48,7 +48,7 @@ namespace Biblioteca.DAO
                     cmd.Parameters.AddWithValue("@cpf", usuario.Cpf);
                     cmd.Parameters.AddWithValue("@email", usuario.Email);
                     cmd.Parameters.AddWithValue("@nome", usuario.Nome);
-                    cmd.Parameters.AddWithValue("@id_endereco_fk", usuario.Id_Endereco);
+                    cmd.Parameters.AddWithValue("@id_endereco_fk", usuario.Id_Endereco_Fk);
                     cmd.Parameters.AddWithValue("@id_usuario", usuario.Id_Usuario);
 
                     int linhas = cmd.ExecuteNonQuery();
@@ -98,7 +98,7 @@ namespace Biblioteca.DAO
 
             try
             {
-                string sql = @"SELECT * FROM usuario ORDER BY nome";
+                string sql = @"SELECT * FROM usuario ORDER BY id_usuario";
 
                 using (var conexao = Conexao.Conectar())
                 using (var cmd = new MySqlCommand(sql, conexao))
@@ -114,7 +114,17 @@ namespace Biblioteca.DAO
                         objUser.Cpf = dr.GetString("cpf");
                         objUser.Email = dr.GetString("email");
                         objUser.Nome = dr.GetString("nome");
-                        objUser.Id_Endereco = dr.GetInt32("id_endereco_fk");
+                        objUser.Id_Endereco_Fk = dr.GetInt32("id_endereco_fk");
+
+                        objUser._Endereco = new Endereco()
+                        {
+                            Id_Endereco = dr.GetInt32("id_endereco"),
+                            Estado = dr.GetString("estado"),
+                            Cidade = dr.GetString("cidade"),
+                            Bairro = dr.GetString("bairro"),
+                            Rua = dr.GetString("rua"),
+                            NumCasa = dr.GetInt32("num_casa")
+                        };
 
                         listUser.Add(objUser);
                     }

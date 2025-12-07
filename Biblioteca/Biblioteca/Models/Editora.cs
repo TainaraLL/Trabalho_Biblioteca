@@ -8,6 +8,6 @@
         public string Cnpj { get; set; }
         public string Email { get; set; }
 
-        public int Id_Endereco;
+        public int Id_Endereco { get; set; }
     }
 }

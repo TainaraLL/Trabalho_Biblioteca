@@ -96,7 +96,7 @@ namespace Biblioteca.DAO
 
             try
             {
-                string sql = @"SELECT * FROM endereco ORDER BY cidade";
+                string sql = @"SELECT * FROM endereco ORDER BY id_endereco";
 
                 using (var conexao = Conexao.Conectar())
                 using (var cmd = new MySqlCommand(sql, conexao))

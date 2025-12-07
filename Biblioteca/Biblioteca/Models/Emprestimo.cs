@@ -9,8 +9,8 @@
         public DateOnly Data_Devolucao { get; set; }
         public string Obervacao { get; set; }
 
-        public int Id_Funcionario;
-        public int Id_Usuario;
-        public int Id_Exemplar;
+        public int Id_Funcionario { get; set; }
+        public int Id_Usuario { get; set; }
+        public int Id_Exemplar { get; set; }
     }
 }

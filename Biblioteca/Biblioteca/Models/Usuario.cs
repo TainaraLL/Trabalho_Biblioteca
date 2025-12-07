@@ -8,7 +8,9 @@
         public string Cpf { get; set; }
         public string Email { get; set; }
 
-        public int Id_Endereco;
+        public int Id_Endereco_Fk { get; set; }
+
+        public Endereco _Endereco { get; set; }
 
         public Usuario()
         {
@@ -25,68 +27,64 @@
         public void SetCpf(string _cpf)
         {
             _cpf = _cpf.Replace(".", "").Replace("-", "");
-            _cpf = _cpf.Trim();
-
-            //primeiro digito verificador
-
-            int soma1 = 0;
-            int multiplicar1 = 10;
-            int resto;
-            int digito;
 
             if (_cpf.Length != 11)
             {
-                throw new Exception("CPF tem que ter 11 digitos");
+                throw new Exception("CPF Inválido");
             }
 
-            for (int i = 0; i < 9; i++)
+            // Validar 1° Didito
+            int contador = 10;
+            int somaMult = 0;
+
+            for (int i = 0; i < _cpf.Length - 2; i++)
             {
-                soma1 += int.Parse(_cpf[i].ToString()) * multiplicar1;
-                multiplicar1--;
+                somaMult += int.Parse(_cpf[i].ToString()) * contador; //Converte de string para int.
+                contador--;
             }
 
-            resto = soma1 % 11; //calcular o resto da divisão
+            int mod = somaMult % 11; //calcular o resto da divisão. mod = resto
 
-            if (resto < 2)
+            if (mod < 2 && int.Parse(_cpf[9].ToString()) != 0) //SE mod for menor que 2 E o digito é 0
             {
-                digito = 0;
+                throw new Exception("CPF Inválido");
             }
 
-            else
+            else if (mod >= 2)
             {
-                digito = 11 - resto;
+                int digitoVali = 11 - mod;
+
+                if (int.Parse(_cpf[9].ToString()) != digitoVali) //SE
+                {
+                    throw new Exception("CPF Inválido");
+                }
             }
 
-            if (digito != int.Parse(_cpf[9].ToString()))
-                throw new Exception("Primeiro digito está incorreto!");
+            // Validar 2 ° Didito
+            contador = 11;
+            somaMult = 0;
 
-            //segundo digito verificador
-
-            int soma2 = 0;
-            int multiplicar2 = 11;
-            int resto2;
-            int digito2;
-
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < _cpf.Length - 1; i++)
             {
-
-                soma2 += int.Parse(_cpf[i].ToString()) * multiplicar2;
-                multiplicar2--;
+                somaMult += int.Parse(_cpf[i].ToString()) * contador; //Converte de string para int.
+                contador--;
             }
-            resto2 = soma2 % 11; //calcular o resto da divisão
 
-            if (resto2 < 2)
+            mod = somaMult % 11; //calcular o resto da divisão. mod = resto
+
+            if (mod < 2 && int.Parse(_cpf[10].ToString()) != 0)
             {
-                digito2 = 0;
+                throw new Exception("CPF Inválido");
             }
 
-            else
+            else if (mod >= 2)
             {
-                digito2 = 11 - resto2;
+                int digitoVali = 11 - mod;
+                if (int.Parse(_cpf[10].ToString()) != digitoVali) //SE
+                {
+                    throw new Exception("CPF Inválido");
+                }
             }
-
-            if (digito2 != int.Parse(_cpf[10].ToString()))
-                throw new Exception("Segundo digito está incorreto!");
         }
 
         public string GetCpf()
