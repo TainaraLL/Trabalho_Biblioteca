@@ -15,8 +15,8 @@ List<Autor_Livro> listAutorLivro = new List<Autor_Livro>();
 EnderecoDAO objEndDAO = new EnderecoDAO();
 UsuarioDAO objUserDAO = new UsuarioDAO();
 
-var listEndDAO = objEndDAO.GetAll();
-var listUserDAO = objUserDAO.GetAll();
+//var listEndDAO = objEndDAO.GetAll();
+//var listUserDAO = objUserDAO.GetAll();
 
 try
 {
@@ -59,7 +59,6 @@ try
         Console.WriteLine("11- Cadastrar Emprestimo");
         Console.WriteLine("12- Cadastrar Autor_Livro");
 
-        Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\n----------- CONSULTAS -----------\n");
@@ -78,7 +77,6 @@ try
         Console.WriteLine("23- Consultar Emprestimo");
         Console.WriteLine("24- Consultar Autor_Livro");
 
-        Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\n----------- ATUALIZAÇÕES -----------\n");
@@ -87,7 +85,6 @@ try
         Console.WriteLine("25- Atualizar Endereço");
         Console.WriteLine("26- Ataulizar Usuário");
 
-        Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\n------------- EXCLUSÃO -------------\n");
@@ -251,13 +248,13 @@ try
     // CONSULTAR CATEGORIA 
     void ConsCategoria()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR CATEGORIA -----------");
+        Console.ResetColor();
+
         foreach (var l in listCategoria)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR CATEGORIA -----------");
-            Console.ResetColor();
-
             Console.Write($"\nID: {l.Id_Categoria}");
             Console.WriteLine($"Nome: {l.Nome}\n");
 
@@ -294,13 +291,13 @@ try
     // CONSULTAR CARGO 
     void ConsCargo()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR CARGO -----------");
+        Console.ResetColor();
+
         foreach (var l in listCargo)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR CARGO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {l.Id_Cargo}");
             Console.WriteLine($"Nome: {l.Nome}\n");
 
@@ -337,13 +334,13 @@ try
     // CONSULTAR STATUS 
     void ConsStatus()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR STATUS -----------");
+        Console.ResetColor();
+
         foreach (var s in listStatus)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR STATUS -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {s.Id_Status}");
             Console.WriteLine($"Nome: {s.Situacao}\n");
 
@@ -383,13 +380,13 @@ try
     // CONSULTAR AUTOR 
     void ConsAutor()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR AUTOR -----------");
+        Console.ResetColor();
+
         foreach (var a in listAutor)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR AUTOR -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {a.Id_Autor}");
             Console.WriteLine($"Nome: {a.Nome}");
             Console.WriteLine($"Nacionalidade: {a.Nacionalidade}\n");
@@ -439,13 +436,15 @@ try
     // CONSULTAR ENDEREÇO
     void ConsEndereco()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR ENDEREÇO -----------");
+        Console.ResetColor();
+
+        var listEndDAO = objEndDAO.GetAll();
+
         foreach (var l in listEndDAO)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR ENDEREÇO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nEstado: {l.Estado}");
             Console.WriteLine($"Cidade: {l.Cidade}");
             Console.WriteLine($"Bairro: {l.Bairro}");
@@ -462,8 +461,6 @@ try
     // ATUALIZAR ENDEREÇO
     void UpdateEndereco(EnderecoDAO endDao)
     {
-        Endereco objEnd = new Endereco();
-
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\n----------- ATUALIZAR ENDEREÇO -----------");
@@ -471,6 +468,8 @@ try
 
         Console.Write("\nDigite o ID do endereço que deseja atualizar: ");
         int id = Convert.ToInt32(Console.ReadLine());
+
+        Endereco objEnd = new Endereco {Id_Endereco = id};
 
         Console.Write("\nEstado: ");
         objEnd.Estado = Console.ReadLine();
@@ -522,7 +521,6 @@ try
 
             Console.WriteLine($"\nErro ao excluir endereço: {ex.Message}");
             Console.ResetColor();
-
         }
     }
 
@@ -531,6 +529,9 @@ try
     // CADASTRAR USUÁRIO
     void CadUsuario()
     {
+        var listEndDAO = objEndDAO.GetAll();
+        var listUserDAO = objUserDAO.GetAll();
+
         Usuario objUser = new Usuario();
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -575,13 +576,15 @@ try
     // CONSULTAR USUÁRIO
     void ConsUsuario()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR USUÁRIO -----------");
+        Console.ResetColor();
+
+        var listUserDAO = objUserDAO.GetAll();
+
         foreach (var l in listUserDAO)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR USUÁRIO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {l.Id_Usuario}");
             Console.WriteLine($"Nome: {l.Nome}");
             Console.WriteLine($"Telefone: {l.Telefone}");
@@ -605,12 +608,17 @@ try
     // ATUALIZAR USUÁRIO 
     void UpdateUsuario(UsuarioDAO userDao)
     {
-        Usuario objUser = new Usuario();
+        var listEndDAO = objEndDAO.GetAll();
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\n----------- ATUALIZAR USUÁRIO -----------");
         Console.ResetColor();
+
+        Console.Write("\nDigite o ID do usuário que deseja excluir: ");
+        int id = Convert.ToInt32(Console.ReadLine());
+
+        Usuario objUser = new Usuario { Id_Usuario = id };
 
         Console.Write("\nInforme o nome do usuário: ");
         objUser.Nome = Console.ReadLine();
@@ -639,6 +647,8 @@ try
         objUser.Id_Endereco_Fk = listEndDAO[enderecoSelecionado].Id_Endereco;
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        userDao.Update(objUser);
 
         Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
         Console.ResetColor();
@@ -679,6 +689,8 @@ try
     // CADASTRAR FUNCIONÁRIO
     void CadFuncionario()
     {
+        var listEndDAO = objEndDAO.GetAll();
+
         Funcionario objFun = new Funcionario();
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -715,7 +727,7 @@ try
 
         foreach (var end in listEndDAO)
         {
-            Console.WriteLine($"\n{cont + 1} - {end.Estado}, {end.Cidade}, {end.Bairro}, {end.Rua} - {end.NumCasa}");
+            Console.WriteLine($"\n{contEnd + 1} - {end.Estado}, {end.Cidade}, {end.Bairro}, {end.Rua} - {end.NumCasa}");
             contEnd++;
         }
 
@@ -735,19 +747,26 @@ try
     // CONSULTAR FUNCIONÁRIO
     void ConsFuncionario()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR FUNCIONÁRIO -----------");
+        Console.ResetColor();
+
         foreach (var f in listFunc)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR FUNCIONÁRIO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {f.Id_Funcionario}");
             Console.WriteLine($"Nome: {f.Nome}");
             Console.WriteLine($"Telefone: {f.Telefone}");
             Console.WriteLine($"Email: {f.Email}");
             Console.WriteLine($"CPF: {f.Cpf}");
-            Console.WriteLine($"Cargo: {f.Id_Cargo}\n");
+            Console.WriteLine($"Cargo: {f._Cargo.Nome}\n");
+
+            Console.WriteLine("ENDEREÇO ----------------------------------");
+            Console.WriteLine($"\nEstado: {f._Endereco.Estado}");
+            Console.WriteLine($"Cidade: {f._Endereco.Cidade}");
+            Console.WriteLine($"Bairro: {f._Endereco.Bairro}");
+            Console.WriteLine($"Rua: {f._Endereco.Rua}");
+            Console.WriteLine($"Nº:{f._Endereco.NumCasa}");
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
@@ -761,6 +780,8 @@ try
     // CADASTRAR EDITORA
     void CadEditora()
     {
+        var listEndDAO = objEndDAO.GetAll();
+
         Editora e = new Editora();
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -803,19 +824,25 @@ try
     // CONSULTAR EDITORA
     void ConsEditora()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR EDITORA -----------");
+        Console.ResetColor();
+
         foreach (var e in listEditora)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR EDITORA -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {e.Id_Editora}");
             Console.WriteLine($"Nome Fantasia: {e.NomeFantasia}");
             Console.WriteLine($"Telefone: {e.Telefone}");
             Console.WriteLine($"CNPJ: {e.Cnpj}");
-            Console.WriteLine($"Email: {e.Email}");
-            Console.WriteLine($"ID Endereço: {e.Id_Endereco}\n");
+            Console.WriteLine($"Email: {e.Email}\n");
+
+            Console.WriteLine("ENDEREÇO ----------------------------------");
+            Console.WriteLine($"\nEstado: {e._Endereco.Estado}");
+            Console.WriteLine($"Cidade: {e._Endereco.Cidade}");
+            Console.WriteLine($"Bairro: {e._Endereco.Bairro}");
+            Console.WriteLine($"Rua: {e._Endereco.Rua}");
+            Console.WriteLine($"Nº:{e._Endereco.NumCasa}");
 
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
@@ -877,13 +904,13 @@ try
     // CONSULTAR LIVRO
     void ConsLivro()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR LIVRO -----------");
+        Console.ResetColor();
+
         foreach (var l in listLivro)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR LIVRO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {l.Id_Livro}");
             Console.WriteLine($"Título: {l.Titulo}");
             Console.WriteLine($"Ano: {l.AnoPubli}");
@@ -944,13 +971,13 @@ try
     // CONSULTAR EXEMPLAR
     void ConsExemplar()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR EXEMPLAR -----------");
+        Console.ResetColor();
+
         foreach (var l in listExemplar)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR EXEMPLAR -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {l.Id_Exemplar}");
             Console.WriteLine($"Livro: {l.Id_Livro}");
             Console.WriteLine($"Status: {l.Id_Status}\n");
@@ -967,6 +994,8 @@ try
     // CADASTRAR EMPRÉSTIMO
     void CadEmprestimo()
     {
+        var listUserDAO = objUserDAO.GetAll();
+
         Emprestimo objEmp = new Emprestimo();
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -995,6 +1024,8 @@ try
             contExp++;
         }
 
+        Console.WriteLine("");
+
         int expSel = Convert.ToInt32(Console.ReadLine()) - 1;
         objEmp.Id_Exemplar = listExemplar[expSel].Id_Exemplar;
 
@@ -1015,13 +1046,13 @@ try
     // CONSULTAR EMPRÉSTIMO
     void ConsEmprestimo()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR EMPRÉSTIMO -----------");
+        Console.ResetColor();
+
         foreach (var l in listEmprestimo)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR EMPRÉSTIMO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nID: {l.Id_Emprestimo}");
             Console.WriteLine($"Usuário: {l.Id_Usuario}");
             Console.WriteLine($"Exemplar: {l.Id_Exemplar}");
@@ -1082,13 +1113,13 @@ try
     // CONSULTAR AUTOR_LIVRO
     void ConsAutorLivro()
     {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- CONSULTAR AUTOR_LIVRO -----------");
+        Console.ResetColor();
+
         foreach (var l in listAutorLivro)
         {
-            Console.ForegroundColor = ConsoleColor.DarkMagenta;
-
-            Console.WriteLine("\n----------- CONSULTAR AUTOR_LIVRO -----------");
-            Console.ResetColor();
-
             Console.WriteLine($"\nAutor: {l.Id_Autor}");
             Console.WriteLine($"Livro: {l.Id_Livro}\n");
 

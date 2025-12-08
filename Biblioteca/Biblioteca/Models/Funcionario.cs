@@ -12,6 +12,9 @@
         public int Id_Endereco { get; set; }
         public int Id_Cargo { get; set; }
 
+        public Cargo _Cargo { get; set; }   
+        public Endereco _Endereco { get; set; }
+
         public Funcionario()
         {
 

@@ -7,7 +7,7 @@
         public string Telefone { get; set; }
         public string Cnpj { get; set; }
         public string Email { get; set; }
-
         public int Id_Endereco { get; set; }
+        public Endereco _Endereco { get; set; }
     }
 }
