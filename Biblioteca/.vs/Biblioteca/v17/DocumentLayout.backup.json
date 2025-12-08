@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Biblioteca\\Program.cs",
               "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Program.cs",
               "RelativeToolTip": "Biblioteca\\Program.cs",
-              "ViewState": "AgIAALQBAAAAAAAAAAAIwMYBAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEEAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T06:37:58.042Z",
               "IsPinned": true,
@@ -92,8 +92,7 @@
               "RelativeToolTip": "Biblioteca\\DAO\\UsuarioDAO.cs",
               "ViewState": "AgIAAF4AAAAAAAAAAAA1wIQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T17:53:22.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T17:53:22.208Z"
             },
             {
               "$type": "Document",
@@ -105,8 +104,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Endereco.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:51:54.329Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T09:51:54.329Z"
             },
             {
               "$type": "Document",
@@ -118,8 +116,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Usuario.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T19:13:50.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T19:13:50.476Z"
             },
             {
               "$type": "Document",
@@ -131,8 +128,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Funcionario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T20:01:13.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T20:01:13.383Z"
             },
             {
               "$type": "Document",
@@ -144,8 +140,7 @@
               "RelativeToolTip": "Biblioteca\\DAO\\EnderecoDAO.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAF4AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T18:31:41.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-07T18:31:41.336Z"
             },
             {
               "$type": "Document",
@@ -157,8 +152,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:50:29.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T09:50:29.17Z"
             },
             {
               "$type": "Document",
@@ -170,8 +164,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Cargo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:51:11.894Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T09:51:11.894Z"
             },
             {
               "$type": "Document",
@@ -183,8 +176,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Exemplar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:52:49.254Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T09:52:49.254Z"
             },
             {
               "$type": "Document",
@@ -196,8 +188,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Status.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:51:28.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T09:51:28.228Z"
             },
             {
               "$type": "Document",
@@ -209,8 +200,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Autor_Livro.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:09:09.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T15:09:09.833Z"
             },
             {
               "$type": "Document",
@@ -222,8 +212,7 @@
               "RelativeToolTip": "Biblioteca\\Models\\Autor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:51:43.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T09:51:43.422Z"
             },
             {
               "$type": "Document",

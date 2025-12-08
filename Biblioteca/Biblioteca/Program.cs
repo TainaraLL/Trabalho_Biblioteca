@@ -78,6 +78,24 @@ try
         Console.WriteLine("23- Consultar Emprestimo");
         Console.WriteLine("24- Consultar Autor_Livro");
 
+        Console.ResetColor();
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- ATUALIZAÇÕES -----------\n");
+        Console.ResetColor();
+
+        Console.WriteLine("25- Atualizar Endereço");
+        Console.WriteLine("26- Ataulizar Usuário");
+
+        Console.ResetColor();
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n------------- EXCLUSÃO -------------\n");
+        Console.ResetColor();
+
+        Console.WriteLine("27- Excluir Endereço");
+        Console.WriteLine("28- Excluir Usuário");
+
         Console.BackgroundColor = ConsoleColor.DarkMagenta;
         Console.ForegroundColor = ConsoleColor.White;
 
@@ -187,7 +205,21 @@ try
                 ConsAutorLivro();
                 break;
 
+            // OUTROS TELAS
             case 25:
+                UpdateEndereco(objEndDAO);
+                break;
+
+            case 26:
+                UpdateUsuario(objUserDAO);
+                break;
+
+            case 27:
+                DeleteEndereco(objEndDAO);
+                break;
+
+            case 28:
+                DeleteUsuario(objUserDAO);
                 break;
         }
 
@@ -209,6 +241,11 @@ try
         objCategoria.Nome = Console.ReadLine();
 
         listCategoria.Add(objCategoria);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR CATEGORIA 
@@ -223,6 +260,11 @@ try
 
             Console.Write($"\nID: {l.Id_Categoria}");
             Console.WriteLine($"Nome: {l.Nome}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -242,6 +284,11 @@ try
         obj.Nome = Console.ReadLine();
 
         listCargo.Add(obj);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR CARGO 
@@ -256,6 +303,11 @@ try
 
             Console.WriteLine($"\nID: {l.Id_Cargo}");
             Console.WriteLine($"Nome: {l.Nome}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -275,6 +327,11 @@ try
         s.Situacao = Console.ReadLine();
 
         listStatus.Add(s);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR STATUS 
@@ -289,6 +346,11 @@ try
 
             Console.WriteLine($"\nID: {s.Id_Status}");
             Console.WriteLine($"Nome: {s.Situacao}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -311,6 +373,11 @@ try
         a.Nacionalidade = Console.ReadLine();
 
         listAutor.Add(a);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR AUTOR 
@@ -326,6 +393,11 @@ try
             Console.WriteLine($"\nID: {a.Id_Autor}");
             Console.WriteLine($"Nome: {a.Nome}");
             Console.WriteLine($"Nacionalidade: {a.Nacionalidade}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -357,6 +429,11 @@ try
         objEnd.NumCasa = int.Parse(Console.ReadLine());
 
         objEndDAO.Create(objEnd);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR ENDEREÇO
@@ -374,20 +451,79 @@ try
             Console.WriteLine($"Bairro: {l.Bairro}");
             Console.WriteLine($"Rua: {l.Rua}");
             Console.WriteLine($"Nº: {l.NumCasa}");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
-    void UpdateEndereco()
+    // ATUALIZAR ENDEREÇO
+    void UpdateEndereco(EnderecoDAO endDao)
     {
+        Endereco objEnd = new Endereco();
 
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- ATUALIZAR ENDEREÇO -----------");
+        Console.ResetColor();
+
+        Console.Write("\nDigite o ID do endereço que deseja atualizar: ");
+        int id = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("\nEstado: ");
+        objEnd.Estado = Console.ReadLine();
+
+        Console.Write("Cidade: ");
+        objEnd.Cidade = Console.ReadLine();
+
+        Console.Write("Bairro: ");
+        objEnd.Bairro = Console.ReadLine();
+
+        Console.Write("Rua: ");
+        objEnd.Rua = Console.ReadLine();
+
+        Console.Write("Número da casa: ");
+        objEnd.NumCasa = int.Parse(Console.ReadLine());
+
+        endDao.Update(objEnd);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
-    void DeleteEndereco(EnderecoDAO endereco)
+    // DELETAR ENDEREÇO
+    void DeleteEndereco(EnderecoDAO endDao)
     {
-        Console.Write("Digite o ID  do endereço que deseja excluir: ");
-        int id = Convert.ToInt32( Console.ReadLine());
+        try
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
-        endereco.Delete(id);
+            Console.WriteLine("\n----------- DELETAR ENDEREÇO -----------");
+            Console.ResetColor();
+
+            Console.Write("\nDigite o ID do endereço que deseja excluir: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            endDao.Delete(id);
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
+        }
+
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine($"\nErro ao excluir endereço: {ex.Message}");
+            Console.ResetColor();
+
+        }
     }
 
 
@@ -421,14 +557,19 @@ try
         {
             Console.WriteLine($"\n{cont + 1} - {end.Estado}, {end.Cidade}, {end.Bairro} - {end.Rua}, - {end.NumCasa}");
             cont++;
-
-            Console.WriteLine("");
         }
+
+        Console.WriteLine("");
 
         int enderecoSelecionado = Convert.ToInt32(Console.ReadLine()) - 1;
         objUser.Id_Endereco_Fk = listEndDAO[enderecoSelecionado].Id_Endereco;
 
         objUserDAO.Create(objUser);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR USUÁRIO
@@ -452,8 +593,84 @@ try
             Console.WriteLine($"Cidade: {l._Endereco.Cidade}");
             Console.WriteLine($"Bairro: {l._Endereco.Bairro}");
             Console.WriteLine($"Rua: {l._Endereco.Rua}");
-            Console.WriteLine($"Nº: {l._Endereco.NumCasa}");
+            Console.WriteLine($"Nº:{l._Endereco.NumCasa}");
 
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
+        }
+    }
+
+    // ATUALIZAR USUÁRIO 
+    void UpdateUsuario(UsuarioDAO userDao)
+    {
+        Usuario objUser = new Usuario();
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\n----------- ATUALIZAR USUÁRIO -----------");
+        Console.ResetColor();
+
+        Console.Write("\nInforme o nome do usuário: ");
+        objUser.Nome = Console.ReadLine();
+
+        Console.Write("Informe o telefone: ");
+        objUser.Telefone = Console.ReadLine();
+
+        Console.Write("Informe o CPF: ");
+        objUser.Cpf = Console.ReadLine();
+
+        Console.Write("Informe o email: ");
+        objUser.Email = Console.ReadLine();
+
+        Console.WriteLine("\nSelecione o endereço: ");
+        int cont = 0;
+
+        foreach (var end in listEndDAO)
+        {
+            Console.WriteLine($"\n{cont + 1} - {end.Estado}, {end.Cidade}, {end.Bairro} - {end.Rua}, - {end.NumCasa}");
+            cont++;
+        }
+
+        Console.WriteLine("");
+
+        int enderecoSelecionado = Convert.ToInt32(Console.ReadLine()) - 1;
+        objUser.Id_Endereco_Fk = listEndDAO[enderecoSelecionado].Id_Endereco;
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
+    }
+
+    // DELETAR USUÁRIO
+    void DeleteUsuario(UsuarioDAO userDao)
+    {
+        try
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\n----------- DELETAR USUÁRIO -----------");
+            Console.ResetColor();
+            
+            Console.Write("\nDigite o ID do usuário que deseja excluir: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            userDao.Delete(id);
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
+        }
+
+        catch (Exception ex)
+        {
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine($"\nErro ao excluir usuário: {ex.Message}");
+            Console.ResetColor();
         }
     }
 
@@ -500,14 +717,19 @@ try
         {
             Console.WriteLine($"\n{cont + 1} - {end.Estado}, {end.Cidade}, {end.Bairro}, {end.Rua} - {end.NumCasa}");
             contEnd++;
-
-            Console.WriteLine("");
         }
+
+        Console.WriteLine("");
 
         int enderecoSelecionado = Convert.ToInt32(Console.ReadLine()) - 1;
         objFun.Id_Endereco = listEndDAO[enderecoSelecionado].Id_Endereco;
 
         listFunc.Add(objFun);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR FUNCIONÁRIO
@@ -526,6 +748,11 @@ try
             Console.WriteLine($"Email: {f.Email}");
             Console.WriteLine($"CPF: {f.Cpf}");
             Console.WriteLine($"Cargo: {f.Id_Cargo}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -566,6 +793,11 @@ try
         e.Id_Endereco = listEndDAO[op].Id_Endereco;
 
         listEditora.Add(e);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR EDITORA
@@ -584,6 +816,11 @@ try
             Console.WriteLine($"CNPJ: {e.Cnpj}");
             Console.WriteLine($"Email: {e.Email}");
             Console.WriteLine($"ID Endereço: {e.Id_Endereco}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -629,8 +866,12 @@ try
         int editSel = Convert.ToInt32(Console.ReadLine()) - 1;
         objLivro.Id_Editora = listEditora[editSel].Id_Editora;
 
-
         listLivro.Add(objLivro);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR LIVRO
@@ -648,6 +889,11 @@ try
             Console.WriteLine($"Ano: {l.AnoPubli}");
             Console.WriteLine($"Categoria: {l.Id_Categoria}");
             Console.WriteLine($"Editora: {l.Id_Editora}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -688,6 +934,11 @@ try
         ex.Id_Status = listStatus[statusSel].Id_Status;
 
         listExemplar.Add(ex);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR EXEMPLAR
@@ -703,6 +954,11 @@ try
             Console.WriteLine($"\nID: {l.Id_Exemplar}");
             Console.WriteLine($"Livro: {l.Id_Livro}");
             Console.WriteLine($"Status: {l.Id_Status}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -749,6 +1005,11 @@ try
         objEmp.Data_Devolucao = DateOnly.Parse(Console.ReadLine());
 
         listEmprestimo.Add(objEmp);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR EMPRÉSTIMO
@@ -766,6 +1027,11 @@ try
             Console.WriteLine($"Exemplar: {l.Id_Exemplar}");
             Console.WriteLine($"Data Empréstimo: {l.Data_Emprestimo}");
             Console.WriteLine($"Data Devolução: {l.Data_Devolucao}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 
@@ -806,6 +1072,11 @@ try
         al.Id_Livro = listLivro[lSel].Id_Livro;
 
         listAutorLivro.Add(al);
+
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+        Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ResetColor();
     }
 
     // CONSULTAR AUTOR_LIVRO
@@ -820,6 +1091,11 @@ try
 
             Console.WriteLine($"\nAutor: {l.Id_Autor}");
             Console.WriteLine($"Livro: {l.Id_Livro}\n");
+
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+
+            Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ResetColor();
         }
     }
 }
