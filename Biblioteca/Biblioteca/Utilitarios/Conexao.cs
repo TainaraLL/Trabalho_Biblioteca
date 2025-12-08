@@ -6,7 +6,7 @@ namespace Biblioteca.Utilitarios
     {
         /* Contante com os dados de conexão, como senha e banco de dados  
            Constantes são valores imutáveis, define na compilção e não muda durante a execução */
-        private const string strConexao = "server=localhost;port=3360;uid=root;pwd=root;database=biblioteca_leal"; //CONST é uma "variável" que não muda.
+        private const string strConexao = "server=localhost;port=3306;uid=root;pwd=root;database=biblioteca_leal"; //CONST é uma "variável" que não muda.
 
         public static MySqlConnection Conectar()
         {

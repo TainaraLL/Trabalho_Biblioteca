@@ -98,7 +98,8 @@ namespace Biblioteca.DAO
 
             try
             {
-                string sql = @"SELECT * FROM usuario ORDER BY id_usuario";
+                string sql = @"SELECT u.*, e.estado, e.cidade, e.bairro, e.rua, e.num_casa, e.id_endereco FROM usuario AS u 
+                    INNER JOIN endereco AS e ON u.id_endereco_fk = e.id_endereco ORDER BY u.id_usuario";
 
                 using (var conexao = Conexao.Conectar())
                 using (var cmd = new MySqlCommand(sql, conexao))
@@ -119,7 +120,7 @@ namespace Biblioteca.DAO
                         objUser._Endereco = new Endereco()
                         {
                             Id_Endereco = dr.GetInt32("id_endereco"),
-                            Estado = dr.GetString("estado"),
+                            Estado = dr.GetString("estado"), 
                             Cidade = dr.GetString("cidade"),
                             Bairro = dr.GetString("bairro"),
                             Rua = dr.GetString("rua"),

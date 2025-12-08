@@ -1,7 +1,7 @@
 ﻿using Biblioteca.DAO;
 using Biblioteca.Models;
 
-List<Categoria> listCategoria = new List<Categoria>();
+/*List<Categoria> listCategoria = new List<Categoria>();
 List<Cargo> listCargo = new List<Cargo>();
 List<Status> listStatus = new List<Status>();
 List<Autor> listAutor = new List<Autor>();
@@ -10,13 +10,10 @@ List<Editora> listEditora = new List<Editora>();
 List<Livro> listLivro = new List<Livro>();
 List<Exemplar> listExemplar = new List<Exemplar>();
 List<Emprestimo> listEmprestimo = new List<Emprestimo>();
-List<Autor_Livro> listAutorLivro = new List<Autor_Livro>();
+List<Autor_Livro> listAutorLivro = new List<Autor_Livro>();*/
 
 EnderecoDAO objEndDAO = new EnderecoDAO();
 UsuarioDAO objUserDAO = new UsuarioDAO();
-
-//var listEndDAO = objEndDAO.GetAll();
-//var listUserDAO = objUserDAO.GetAll();
 
 try
 {
@@ -32,7 +29,7 @@ try
         Console.WriteLine("-----------------------------------------------------------------------------------");
         Console.WriteLine("                                     MENU                                          ");
         Console.WriteLine("-----------------------------------------------------------------------------------");
-        Console.WriteLine("");
+        Console.ResetColor();
 
         Console.BackgroundColor = ConsoleColor.Black;
         Console.ForegroundColor = ConsoleColor.DarkYellow;
@@ -46,36 +43,36 @@ try
         Console.WriteLine("----------- CADASTROS -----------\n");
         Console.ResetColor();
 
-        Console.WriteLine("1- Cadastrar Categoria");
+        /*Console.WriteLine("1- Cadastrar Categoria");
         Console.WriteLine("2- Cadastrar Cargo");
         Console.WriteLine("3- Cadastrar Status");
         Console.WriteLine("4- Cadastrar Autor");
-        Console.WriteLine("5- Cadastrar Endereço");
+        Console.WriteLine("5- Cadastrar Endereço");*/
         Console.WriteLine("6- Cadastrar Usuário");
         Console.WriteLine("7- Cadastrar Funcionário");
-        Console.WriteLine("8- Cadastrar Editora");
+        /*Console.WriteLine("8- Cadastrar Editora");
         Console.WriteLine("9- Cadastrar Livro");
         Console.WriteLine("10- Cadastrar Exemplar");
         Console.WriteLine("11- Cadastrar Emprestimo");
-        Console.WriteLine("12- Cadastrar Autor_Livro");
+        Console.WriteLine("12- Cadastrar Autor_Livro");*/
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\n----------- CONSULTAS -----------\n");
         Console.ResetColor();
 
-        Console.WriteLine("13- Consultar Categoria");
+        /*Console.WriteLine("13- Consultar Categoria");
         Console.WriteLine("14- Consultar Cargo");
         Console.WriteLine("15- Consultar Status");
         Console.WriteLine("16- Consultar Autor");
-        Console.WriteLine("17- Consultar Endereço");
+        Console.WriteLine("17- Consultar Endereço");*/
         Console.WriteLine("18- Consultar Usuário");
         Console.WriteLine("19- Consultar Funcionário");
-        Console.WriteLine("20- Consultar Editora");
+        /*Console.WriteLine("20- Consultar Editora");
         Console.WriteLine("21- Consultar Livro");
         Console.WriteLine("22- Consultar Exemplar");
         Console.WriteLine("23- Consultar Emprestimo");
-        Console.WriteLine("24- Consultar Autor_Livro");
+        Console.WriteLine("24- Consultar Autor_Livro");*/
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
@@ -98,12 +95,12 @@ try
 
         Console.Write("\nEscolha uma das opções: ");
         opc = Convert.ToInt16(Console.ReadLine());
-
         Console.ResetColor();
 
         switch (opc)
         {
             // TELAS DE CADASTROS
+            /*
             case 1:
                 CadCategoria();
                 break;
@@ -119,6 +116,7 @@ try
             case 4:
                 CadAutor();
                 break;
+            */
 
             case 5:
                 CadEndereco();
@@ -128,6 +126,7 @@ try
                 CadUsuario();
                 break;
 
+            /*
             case 7:
                 CadFuncionario();
                 break;
@@ -169,6 +168,7 @@ try
             case 16:
                 ConsAutor();
                 break;
+            */
 
             case 17:
                 ConsEndereco();
@@ -178,6 +178,7 @@ try
                 ConsUsuario();
                 break;
 
+            /*
             case 19:
                 ConsFuncionario();
                 break;
@@ -201,7 +202,8 @@ try
             case 24:
                 ConsAutorLivro();
                 break;
-
+            *
+            */
             // OUTROS TELAS
             case 25:
                 UpdateEndereco(objEndDAO);
@@ -224,6 +226,7 @@ try
 
     // ----------------------------------------------------------- \\
 
+    /*
     // CADASTRAR CATEGORIA
     void CadCategoria()
     {
@@ -397,7 +400,7 @@ try
             Console.ResetColor();
         }
     }
-
+    */
 
 
     // CADASTRAR ENDEREÇO
@@ -430,6 +433,7 @@ try
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ReadKey();
         Console.ResetColor();
     }
 
@@ -445,7 +449,8 @@ try
 
         foreach (var l in listEndDAO)
         {
-            Console.WriteLine($"\nEstado: {l.Estado}");
+            Console.WriteLine($"\nID: {l.Id_Endereco}");
+            Console.WriteLine($"Estado: {l.Estado}");
             Console.WriteLine($"Cidade: {l.Cidade}");
             Console.WriteLine($"Bairro: {l.Bairro}");
             Console.WriteLine($"Rua: {l.Rua}");
@@ -454,6 +459,7 @@ try
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
             Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ReadKey();
             Console.ResetColor();
         }
     }
@@ -491,6 +497,7 @@ try
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ReadKey();
         Console.ResetColor();
     }
 
@@ -512,6 +519,7 @@ try
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
             Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ReadKey();
             Console.ResetColor();
         }
 
@@ -529,8 +537,7 @@ try
     // CADASTRAR USUÁRIO
     void CadUsuario()
     {
-        var listEndDAO = objEndDAO.GetAll();
-        var listUserDAO = objUserDAO.GetAll();
+        //var listUserDAO = objUserDAO.GetAll();
 
         Usuario objUser = new Usuario();
 
@@ -551,25 +558,26 @@ try
         Console.Write("Informe o email: ");
         objUser.Email = Console.ReadLine();
 
-        Console.WriteLine("\nSelecione o endereço: ");
-        int cont = 0;
+        var list = objEndDAO.GetAll();
 
-        foreach (var end in listEndDAO)
+        Console.WriteLine("\nSelecione o endereço: ");
+        
+        foreach (var end in list)
         {
-            Console.WriteLine($"\n{cont + 1} - {end.Estado}, {end.Cidade}, {end.Bairro} - {end.Rua}, - {end.NumCasa}");
-            cont++;
+            Console.WriteLine($"\n{end.Id_Endereco} - {end.Estado}, {end.Cidade}, {end.Bairro} - {end.Rua}, - {end.NumCasa}");
         }
 
         Console.WriteLine("");
 
-        int enderecoSelecionado = Convert.ToInt32(Console.ReadLine()) - 1;
-        objUser.Id_Endereco_Fk = listEndDAO[enderecoSelecionado].Id_Endereco;
+        int enderecoSelecionado = Convert.ToInt32(Console.ReadLine());
+        objUser.Id_Endereco_Fk = enderecoSelecionado;
 
         objUserDAO.Create(objUser);
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
         Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ReadKey();  
         Console.ResetColor();
     }
 
@@ -581,9 +589,9 @@ try
         Console.WriteLine("\n----------- CONSULTAR USUÁRIO -----------");
         Console.ResetColor();
 
-        var listUserDAO = objUserDAO.GetAll();
+        var list = objUserDAO.GetAll();
 
-        foreach (var l in listUserDAO)
+        foreach (var l in list)
         {
             Console.WriteLine($"\nID: {l.Id_Usuario}");
             Console.WriteLine($"Nome: {l.Nome}");
@@ -592,7 +600,8 @@ try
             Console.WriteLine($"CPF: {l.Cpf}\n");
 
             Console.WriteLine("ENDEREÇO ----------------------------------");
-            Console.WriteLine($"\nEstado: {l._Endereco.Estado}");
+            Console.WriteLine($"\nEstado: {l._Endereco.Id_Endereco}");
+            Console.WriteLine($"Estado: {l._Endereco.Estado}");
             Console.WriteLine($"Cidade: {l._Endereco.Cidade}");
             Console.WriteLine($"Bairro: {l._Endereco.Bairro}");
             Console.WriteLine($"Rua: {l._Endereco.Rua}");
@@ -601,6 +610,7 @@ try
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
             Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ReadKey();
             Console.ResetColor();
         }
     }
@@ -615,7 +625,7 @@ try
         Console.WriteLine("\n----------- ATUALIZAR USUÁRIO -----------");
         Console.ResetColor();
 
-        Console.Write("\nDigite o ID do usuário que deseja excluir: ");
+        Console.Write("\nDigite o ID do usuário que deseja atualizar: ");
         int id = Convert.ToInt32(Console.ReadLine());
 
         Usuario objUser = new Usuario { Id_Usuario = id };
@@ -651,6 +661,7 @@ try
         userDao.Update(objUser);
 
         Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+        Console.ReadKey();
         Console.ResetColor();
     }
 
@@ -672,6 +683,7 @@ try
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
             Console.WriteLine("\nClique em qualquer tecla para voltar ao Menu!\n");
+            Console.ReadKey();
             Console.ResetColor();
         }
 
@@ -684,8 +696,7 @@ try
         }
     }
 
-
-
+    /*
     // CADASTRAR FUNCIONÁRIO
     void CadFuncionario()
     {
@@ -731,12 +742,12 @@ try
             contEnd++;
         }
 
-        Console.WriteLine("");
-
         int enderecoSelecionado = Convert.ToInt32(Console.ReadLine()) - 1;
         objFun.Id_Endereco = listEndDAO[enderecoSelecionado].Id_Endereco;
 
         listFunc.Add(objFun);
+
+        Console.WriteLine("");
 
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
 
@@ -1129,6 +1140,7 @@ try
             Console.ResetColor();
         }
     }
+    */
 }
 
 catch (Exception ex)

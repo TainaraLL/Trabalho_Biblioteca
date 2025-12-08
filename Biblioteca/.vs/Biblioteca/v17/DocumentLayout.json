@@ -7,6 +7,30 @@
       "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\autor_livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\autor_livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\utilitarios\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\utilitarios\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\dao\\enderecodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\dao\\enderecodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\dao\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,24 +43,12 @@
       "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\cargo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\dao\\enderecodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\dao\\enderecodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\exemplar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,18 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\models\\autor_livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\models\\autor_livro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\utilitarios\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|solutionrelative:biblioteca\\utilitarios\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{36C8C843-8395-4539-93C5-97CF39F2FA0D}|Biblioteca\\Biblioteca.csproj|c:\\users\\taina\\music\\trabalho_biblioteca\\biblioteca\\biblioteca\\interface\\idao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -80,7 +80,7 @@
               "RelativeDocumentMoniker": "Biblioteca\\Program.cs",
               "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Program.cs",
               "RelativeToolTip": "Biblioteca\\Program.cs",
-              "ViewState": "AgIAAGcEAAAAAAAAAAAAAOUDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPoBAAAAAAAAAAAQwAoCAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T06:37:58.042Z",
               "IsPinned": true,
@@ -88,46 +88,20 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Autor_Livro.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Autor_Livro.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Models\\Autor_Livro.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Autor_Livro.cs",
+              "RelativeToolTip": "Biblioteca\\Models\\Autor_Livro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T15:09:09.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Editora.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Editora.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Models\\Editora.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Editora.cs",
-              "RelativeToolTip": "Biblioteca\\Models\\Editora.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T00:53:56.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Endereco.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Endereco.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Models\\Endereco.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Endereco.cs",
-              "RelativeToolTip": "Biblioteca\\Models\\Endereco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:51:54.329Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\DAO\\UsuarioDAO.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\UsuarioDAO.cs",
-              "RelativeToolTip": "Biblioteca\\DAO\\UsuarioDAO.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAiwDUAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T17:53:22.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Cargo.cs",
               "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Cargo.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Models\\Cargo.cs",
@@ -140,15 +114,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Funcionario.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Funcionario.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Models\\Funcionario.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Funcionario.cs",
-              "RelativeToolTip": "Biblioteca\\Models\\Funcionario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Categoria.cs",
+              "RelativeToolTip": "Biblioteca\\Models\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T20:01:13.383Z",
+              "WhenOpened": "2025-12-06T09:50:29.17Z",
               "EditorCaption": ""
             },
             {
@@ -166,7 +140,82 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Utilitarios\\Conexao.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Utilitarios\\Conexao.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Utilitarios\\Conexao.cs",
+              "RelativeToolTip": "Biblioteca\\Utilitarios\\Conexao.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T18:09:14.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnderecoDAO.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\EnderecoDAO.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\DAO\\EnderecoDAO.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\EnderecoDAO.cs",
+              "RelativeToolTip": "Biblioteca\\DAO\\EnderecoDAO.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAIwGEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T18:31:41.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\DAO\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\UsuarioDAO.cs",
+              "RelativeToolTip": "Biblioteca\\DAO\\UsuarioDAO.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAQwHoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T17:53:22.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Editora.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Editora.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Models\\Editora.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Editora.cs",
+              "RelativeToolTip": "Biblioteca\\Models\\Editora.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T00:53:56.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Endereco.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Endereco.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Models\\Endereco.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Endereco.cs",
+              "RelativeToolTip": "Biblioteca\\Models\\Endereco.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T09:51:54.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Funcionario.cs",
+              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Funcionario.cs",
+              "RelativeDocumentMoniker": "Biblioteca\\Models\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Funcionario.cs",
+              "RelativeToolTip": "Biblioteca\\Models\\Funcionario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T20:01:13.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Models\\Usuario.cs",
@@ -178,31 +227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EnderecoDAO.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\EnderecoDAO.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\DAO\\EnderecoDAO.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\DAO\\EnderecoDAO.cs",
-              "RelativeToolTip": "Biblioteca\\DAO\\EnderecoDAO.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAF4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T18:31:41.336Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Models\\Categoria.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Categoria.cs",
-              "RelativeToolTip": "Biblioteca\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T09:50:29.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Exemplar.cs",
               "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Exemplar.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Models\\Exemplar.cs",
@@ -214,7 +239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Status.cs",
               "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Status.cs",
               "RelativeDocumentMoniker": "Biblioteca\\Models\\Status.cs",
@@ -223,18 +248,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T09:51:28.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Autor_Livro.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Autor_Livro.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Models\\Autor_Livro.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Models\\Autor_Livro.cs",
-              "RelativeToolTip": "Biblioteca\\Models\\Autor_Livro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T15:09:09.833Z"
             },
             {
               "$type": "Document",
@@ -247,18 +260,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-07T18:03:10.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Utilitarios\\Conexao.cs",
-              "RelativeDocumentMoniker": "Biblioteca\\Utilitarios\\Conexao.cs",
-              "ToolTip": "C:\\Users\\taina\\Music\\Trabalho_Biblioteca\\Biblioteca\\Biblioteca\\Utilitarios\\Conexao.cs",
-              "RelativeToolTip": "Biblioteca\\Utilitarios\\Conexao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T18:09:14.178Z"
             }
           ]
         }
